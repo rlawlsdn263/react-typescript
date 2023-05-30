@@ -1,13 +1,13 @@
 function ListGroup() {
+  const cities = ["뉴욕", "서울", "파리", "도쿄"];
+
   return (
     <>
-      <h1>List Group</h1>
+      <h1>세계 주요 관광 도시</h1>
       <ul className="list-group">
-        <li className="list-group-item">An item</li>
-        <li className="list-group-item">A second item</li>
-        <li className="list-group-item">A third item</li>
-        <li className="list-group-item">A fourth item</li>
-        <li className="list-group-item">And a fifth one</li>
+        {cities.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
       </ul>
     </>
   );
